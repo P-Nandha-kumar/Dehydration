@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HydraWatch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>HydraWatch</h1>
+  </header>
+  
+  <div class="container">
+    <div id="alert-box" class="alert hidden">
+      ⚠ ALERT: Worker needs hydration immediately
+    </div>
+
+    <div class="status-panel" id="status-panel">
+      <h2>Status: <span id="hydration-status">Hydrated</span></h2>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Sweat Level</h3>
+        <p><span id="sweat-level">0</span>%</p>
+      </div>
+      <div class="card">
+        <h3>Body Temperature</h3>
+        <p><span id="body-temp">36.5</span>°C</p>
+      </div>
+      <div class="card">
+        <h3>Heart Rate</h3>
+        <p><span id="heart-rate">75</span> bpm</p>
+      </div>
+      <div class="card">
+        <h3>Skin Impedance</h3>
+        <p><span id="skin-impedance">400</span> ohms</p>
+      </div>
+    </div>
+
+    <div class="card gps-card">
+      <h3>GPS Location</h3>
+      <p>Latitude: 12.9716</p>
+      <p>Longitude: 77.5946</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
